@@ -7,6 +7,8 @@
 .row
   &.top
     margin-top 30px
+    @media screen and (min-width: 1920px)
+      margin 120px auto 0 auto
 
 img
   &.hs
@@ -32,6 +34,7 @@ h3
     text-align center
     font-family:'Raleway'
     font-weight bold
+    margin 100px auto 5px auto
     @media screen and (max-height 480px) and (orientation: landscape)
       max-width 100%
       margin 10px auto 5px auto
@@ -42,11 +45,18 @@ h3
     
 h4
   &.topper
-    font-family:'Raleway'
-    margin 10% auto 0 auto
+    font-family:'Raleway'  
     @media screen and (max-height 480px) and (orientation: landscape)
       margin 10% auto 5% auto
       font-size 14px
     @media screen and (max-width: 480px)
       font-size 10px
     
+p
+  font-family:'Raleway'
+  &.naver
+    margin-right 40px
+    margin-left 40px
+  &.i
+    font-size 12px
+    text-align center

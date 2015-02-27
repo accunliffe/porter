@@ -7,6 +7,11 @@
 .row.top {
   margin-top: 30px;
 }
+@media screen and (min-width: 1920px) {
+  .row.top {
+    margin: 120px auto 0 auto;
+  }
+}
 img.hs {
   max-width: 80%;
   margin: 10% 2.5% 5% 2%;
@@ -42,6 +47,7 @@ h3.i {
   text-align: center;
   font-family: 'Raleway';
   font-weight: bold;
+  margin: 100px auto 5px auto;
 }
 @media screen and (max-height: 480px) and (orientation: landscape) {
   h3.i {
@@ -57,7 +63,6 @@ h3.i {
 }
 h4.topper {
   font-family: 'Raleway';
-  margin: 10% auto 0 auto;
 }
 @media screen and (max-height: 480px) and (orientation: landscape) {
   h4.topper {
@@ -69,4 +74,15 @@ h4.topper {
   h4.topper {
     font-size: 10px;
   }
+}
+p {
+  font-family: 'Raleway';
+}
+p.naver {
+  margin-right: 40px;
+  margin-left: 40px;
+}
+p.i {
+  font-size: 12px;
+  text-align: center;
 }
