@@ -1,0 +1,16 @@
+img.hs {
+  max-width: 80%;
+  margin: 5% 2.5% 5% 4%;
+}
+@media screen and (min-width: 1920px) {
+  img.hs {
+    max-width: 100%;
+    margin: 5% 2.5% 5% 15%;
+  }
+}
+img.i {
+  max-width: 100%;
+}
+h3.i {
+  text-align: center;
+}
