@@ -1,6 +1,6 @@
 img.hs {
   max-width: 80%;
-  margin: 5% 2.5% 5% 4%;
+  margin: 7% 2.5% 5% 2%;
 }
 @media screen and (min-width: 1920px) {
   img.hs {
@@ -8,9 +8,35 @@ img.hs {
     margin: 5% 2.5% 5% 15%;
   }
 }
+@media screen and (max-height: 480px) and (orientation: landscape) {
+  img.hs {
+    max-width: 50%;
+    margin: 5% 2.5% 0 25%;
+  }
+}
 img.i {
   max-width: 100%;
 }
+@media screen and (max-height: 480px) and (orientation: landscape) {
+  img.i {
+    max-width: 100%;
+    margin-top: 0;
+  }
+}
 h3.i {
   text-align: center;
+}
+@media screen and (max-height: 480px) and (orientation: landscape) {
+  h3.i {
+    max-width: 100%;
+    margin: 10px auto 5px auto;
+  }
+}
+p.topper {
+  margin: 20% auto 5% auto;
+}
+@media screen and (max-height: 480px) and (orientation: landscape) {
+  p.topper {
+    margin: 10% auto 5% auto;
+  }
 }
