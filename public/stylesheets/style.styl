@@ -28,7 +28,7 @@ img
     max-width 100%
     @media screen and (max-height 480px) and (orientation: landscape)
       max-width 90%
-      margin-top 0
+      margin-top 30px
     
 h3
   &.i
@@ -54,13 +54,16 @@ h4
     @media screen and (max-width: 480px)
       font-size 10px
     
-p
-  font-family:'Raleway'
+p  
   &.naver
     @media screen and (max-width: 480px)
       display none
     margin-right 40px
     margin-left 40px
+    font-family:'Raleway'
   &.i
-    font-size 12px
     text-align center
+    height 40px
+    margin-bottom 20px
+    @media screen and (max-width: 480px)
+      font-size 12px

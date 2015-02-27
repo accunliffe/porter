@@ -45,7 +45,7 @@ img.i {
 @media screen and (max-height: 480px) and (orientation: landscape) {
   img.i {
     max-width: 90%;
-    margin-top: 0;
+    margin-top: 30px;
   }
 }
 h3.i {
@@ -81,12 +81,10 @@ h4.topper {
     font-size: 10px;
   }
 }
-p {
-  font-family: 'Raleway';
-}
 p.naver {
   margin-right: 40px;
   margin-left: 40px;
+  font-family: 'Raleway';
 }
 @media screen and (max-width: 480px) {
   p.naver {
@@ -94,6 +92,12 @@ p.naver {
   }
 }
 p.i {
-  font-size: 12px;
   text-align: center;
+  height: 40px;
+  margin-bottom: 20px;
+}
+@media screen and (max-width: 480px) {
+  p.i {
+    font-size: 12px;
+  }
 }
