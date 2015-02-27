@@ -41,6 +41,7 @@ img.hs {
 }
 img.i {
   max-width: 100%;
+  cursor: pointer;
 }
 @media screen and (max-height: 480px) and (orientation: landscape) {
   img.i {
@@ -82,8 +83,9 @@ h4.topper {
   }
 }
 p.naver {
-  margin-right: 40px;
-  margin-left: 40px;
+  cursor: pointer;
+  margin-right: 20px;
+  margin-left: 20px;
   font-family: 'Raleway';
 }
 @media screen and (max-width: 480px) {
@@ -93,11 +95,13 @@ p.naver {
 }
 p.i {
   text-align: center;
-  height: 40px;
-  margin-bottom: 20px;
+  height: 30px;
+  margin-bottom: 10px;
 }
 @media screen and (max-width: 480px) {
   p.i {
     font-size: 12px;
+    height: 40px;
+    margin-bottom: 20px;
   }
 }
