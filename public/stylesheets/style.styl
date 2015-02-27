@@ -9,7 +9,8 @@
     margin-top 30px
     @media screen and (min-width: 1920px)
       margin 120px auto 0 auto
-
+    @media screen and (max-width: 480px)
+      margin 20px auto 0 auto
 img
   &.hs
     max-width 80%
@@ -41,6 +42,7 @@ h3
       font-size 8px
     @media screen and (max-width: 480px)
       font-size 14px
+      margin 50px auto 5px auto
     
     
 h4
@@ -55,6 +57,8 @@ h4
 p
   font-family:'Raleway'
   &.naver
+    @media screen and (max-width: 480px)
+      display none
     margin-right 40px
     margin-left 40px
   &.i
