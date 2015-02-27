@@ -1,17 +1,32 @@
+@import url("http://fonts.googleapis.com/css?family=Raleway");
+@import url("http://fonts.googleapis.com/css?family=Raleway:400,800,700");
+@font-face {
+  font-family: 'Arca';
+  src: url("/fonts/Arca-Heavy.ttf");
+}
+.row.top {
+  margin-top: 30px;
+}
 img.hs {
   max-width: 80%;
-  margin: 7% 2.5% 5% 2%;
+  margin: 10% 2.5% 5% 2%;
 }
 @media screen and (min-width: 1920px) {
   img.hs {
     max-width: 100%;
-    margin: 5% 2.5% 5% 15%;
+    margin: 12% 2.5% 5% 15%;
   }
 }
 @media screen and (max-height: 480px) and (orientation: landscape) {
   img.hs {
     max-width: 50%;
-    margin: 5% 2.5% 0 25%;
+    margin: 5% 2.5% 0 20%;
+  }
+}
+@media screen and (max-width: 480px) {
+  img.hs {
+    max-width: 70%;
+    margin: 12% 2.5% 20% 15%;
   }
 }
 img.i {
@@ -19,24 +34,39 @@ img.i {
 }
 @media screen and (max-height: 480px) and (orientation: landscape) {
   img.i {
-    max-width: 100%;
+    max-width: 90%;
     margin-top: 0;
   }
 }
 h3.i {
   text-align: center;
+  font-family: 'Raleway';
+  font-weight: bold;
 }
 @media screen and (max-height: 480px) and (orientation: landscape) {
   h3.i {
     max-width: 100%;
     margin: 10px auto 5px auto;
+    font-size: 8px;
   }
 }
-p.topper {
-  margin: 20% auto 5% auto;
+@media screen and (max-width: 480px) {
+  h3.i {
+    font-size: 14px;
+  }
+}
+h4.topper {
+  font-family: 'Raleway';
+  margin: 10% auto 0 auto;
 }
 @media screen and (max-height: 480px) and (orientation: landscape) {
-  p.topper {
+  h4.topper {
     margin: 10% auto 5% auto;
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 480px) {
+  h4.topper {
+    font-size: 10px;
   }
 }
