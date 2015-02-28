@@ -1,1 +1,1 @@
-angular.module('port', ['ngAnimate',]);
+angular.module('port', ['ngAnimate','ui.bootstrap']);
