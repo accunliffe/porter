@@ -11,6 +11,23 @@
       margin 120px auto 0 auto
     @media screen and (max-width: 480px)
       margin 20px auto 0 auto
+    &.about
+      z-index 1999
+      
+.row-fluid  
+  &.naver    
+    margin-top 40px
+    @media screen and (min-width: 1920px)
+      margin 120px auto 0 auto
+    @media screen and (max-width: 480px)
+      margin 30px auto 0 auto
+      
+.col-xs-4
+  &.right
+    text-align right    
+  &.center
+    text-align center
+    
 img
   &.hs
     max-width 80%
@@ -30,6 +47,12 @@ img
     @media screen and (max-height 480px) and (orientation: landscape)
       max-width 90%
       margin-top 30px
+  &.naver
+    height 30px
+    cursor pointer
+  
+
+
     
 h3
   &.i
@@ -54,12 +77,20 @@ h4
       font-size 14px
     @media screen and (max-width: 480px)
       font-size 10px
+  &.naver
+    font-family:'Raleway'
+    @media screen and (max-width: 480px)
+      font-size 12px
+      height 20px
+      margin-top 5px
     
 p  
   &.naver
     cursor pointer
     @media screen and (max-width: 480px)
-      display none
+      display inline-block
+      font-size 10px
+      width 20px
     margin-right 20px
     margin-left 20px
     font-family:'Raleway'
@@ -70,4 +101,3 @@ p
     @media screen and (max-width: 480px)
       font-size 12px
       height 40px
-      margin-bottom 20px
