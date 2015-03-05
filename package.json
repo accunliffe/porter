@@ -10,7 +10,8 @@
     "jade": "*",
     "stylus": "*",
     "angular": "*",
-    "bootstrap": "*"
+    "bootstrap": "*",
+    "angular-route": "*"
   },
   "subdomain": "acdesign",
   "engines": {
