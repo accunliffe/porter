@@ -14,7 +14,9 @@ html(ng-app="port")
     script(src='bower_components/jquery/dist/jquery.js')
     script(src='bower_components/bootstrap/dist/js/bootstrap.js')
     script(src='bower_components/angular-bootstrap/ui-bootstrap.min.js')
+    script(src='bower_components/angular-route/angular-route.js')
+    script(src='javascripts/controllers.js')
     script(src='javascripts/app.js')
 
-  body(ng-cloak='')
+  body(ng-cloak='', ng-view='')    
     block content
