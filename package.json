@@ -1,5 +1,5 @@
 {
-  "name": "acdesign",
+  "name": "andrewcunliffe",
   "version": "0.0.1-273",
   "private": true,
   "scripts": {
@@ -13,7 +13,7 @@
     "bootstrap": "*",
     "angular-route": "*"
   },
-  "subdomain": "acdesign",
+  "subdomain": "andrewcunliffe",
   "engines": {
     "node": "0.10.x"
   }
