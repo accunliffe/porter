@@ -77,7 +77,7 @@ ul.dropdown-menu {
 }
 @media screen and (min-width: 1920px) {
   .row.top {
-    margin: 120px auto 0 auto;
+    margin: 55px auto 0 auto;
   }
 }
 @media screen and (max-width: 480px) {
@@ -93,7 +93,7 @@ ul.dropdown-menu {
 }
 @media screen and (min-width: 1920px) {
   .row-fluid.naver {
-    margin: 120px auto 0 auto;
+    margin: 0 auto 0 auto;
   }
 }
 @media screen and (max-width: 480px) {
@@ -106,6 +106,9 @@ ul.dropdown-menu {
 }
 .col-xs-4.center {
   text-align: center;
+}
+img {
+  max-width: 100%;
 }
 img.hs {
   max-width: 80%;
@@ -146,10 +149,12 @@ img.naver {
 img.icon {
   height: 50px !important;
   padding: 5px;
+  -webkit-font-smoothing: antialiased;
 }
 img.iconM {
   padding: 2.5px;
-  height: 50px;
+  height: 45px;
+  -webkit-font-smoothing: antialiased;
 }
 img.menu {
   height: 45px;
@@ -176,6 +181,28 @@ h3.i {
     margin: 50px auto 5px auto;
   }
 }
+h3.content {
+  text-align: left;
+  font-family: 'Raleway';
+  font-weight: bold;
+  margin: 20px auto 5px auto;
+}
+@media screen and (max-height: 480px) and (orientation: landscape) {
+  h3.content {
+    max-width: 100%;
+    margin: 10px auto 5px auto;
+    font-size: 8px;
+  }
+}
+@media screen and (max-width: 480px) {
+  h3.content {
+    font-size: 14px;
+    margin: 20px auto 5px auto;
+  }
+}
+h4 {
+  -webkit-font-smoothing: antialiased;
+}
 h4.topper {
   font-family: 'Raleway';
 }
@@ -200,6 +227,9 @@ h4.naver {
     margin-top: 5px;
   }
 }
+p {
+  -webkit-font-smoothing: antialiased;
+}
 p.i {
   text-align: center;
   height: 30px;
@@ -209,5 +239,16 @@ p.i {
   p.i {
     font-size: 12px;
     height: 40px;
+  }
+}
+p.content {
+  text-align: left;
+  margin-bottom: 30px;
+  height: 150px;
+}
+@media screen and (max-width: 480px) {
+  p.content {
+    font-size: 12px;
+    margin-bottom: 0;
   }
 }

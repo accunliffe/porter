@@ -67,7 +67,7 @@ ul
   &.top
     margin-top 30px
     @media screen and (min-width: 1920px)
-      margin 120px auto 0 auto
+      margin 55px auto 0 auto
     @media screen and (max-width: 480px)
       margin 20px auto 0 auto
     &.about
@@ -77,7 +77,7 @@ ul
   &.naver    
     margin-top 40px
     @media screen and (min-width: 1920px)
-      margin 120px auto 0 auto
+      margin 0 auto 0 auto
     @media screen and (max-width: 480px)
       margin 30px auto 0 auto
       
@@ -88,6 +88,7 @@ ul
     text-align center
     
 img
+  max-width 100%
   &.hs
     max-width 80%
     margin 10% 2.5% 5% 2%
@@ -112,9 +113,11 @@ img
   &.icon
     height 50px !important
     padding 5px
+    -webkit-font-smoothing antialiased
   &.iconM
     padding 2.5px
-    height 50px
+    height 45px
+    -webkit-font-smoothing antialiased
   &.menu
     height 45px
     float right
@@ -138,9 +141,21 @@ h3
     @media screen and (max-width: 480px)
       font-size 14px
       margin 50px auto 5px auto
-    
+  &.content
+    text-align left
+    font-family:'Raleway'
+    font-weight bold
+    margin 20px auto 5px auto    
+    @media screen and (max-height 480px) and (orientation: landscape)
+      max-width 100%
+      margin 10px auto 5px auto
+      font-size 8px
+    @media screen and (max-width: 480px)
+      font-size 14px
+      margin 20px auto 5px auto
     
 h4
+  -webkit-font-smoothing antialiased
   &.topper
     font-family:'Raleway'  
     @media screen and (max-height 480px) and (orientation: landscape)
@@ -155,7 +170,8 @@ h4
       height 20px
       margin-top 5px
     
-p  
+p
+  -webkit-font-smoothing antialiased
   &.i
     text-align center
     height 30px
@@ -163,3 +179,10 @@ p
     @media screen and (max-width: 480px)
       font-size 12px
       height 40px
+  &.content
+    text-align left
+    margin-bottom 30px
+    height 150px    
+    @media screen and (max-width: 480px)
+      font-size 12px
+      margin-bottom 0
