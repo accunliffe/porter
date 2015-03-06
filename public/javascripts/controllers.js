@@ -36,6 +36,14 @@ function MyCtrl4() {
 }
 MyCtrl4.$inject = [];
 
+function MyCtrl5() {
+}
+MyCtrl5.$inject = [];
+
+function MyCtrl6() {
+}
+MyCtrl6.$inject = [];
+
 function MainCtrl($scope) {
   $scope.floater = false;
   console.log('floating');

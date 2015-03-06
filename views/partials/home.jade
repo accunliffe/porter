@@ -1,46 +1,27 @@
+
 block content
   .container-fluid
-    nav.navbar.navbar-default.navbar-fixed-top
-      .container-fluid
-        a(href='/home')
-          p.navbar-text.navbar-left.naver Home
-        a(href='https://www.dropbox.com/s/k5tdmgqqm4mbeyt/ACResumeUX4.pdf?dl=0', target='_blank')
-          p.navbar-text.navbar-right.naver Resume
-        a(href='mailto:cunliffeandrewc@gmail.com?Subject=Hello%20There', target='_blank')    
-          p.navbar-text.navbar-right.naver Email
-        a(href='/about',)
-          p.navbar-text.navbar-right.naver About
-
-    .row.top.main(ng-hide='lendy || rand || sk || ts || about')
+    .row.top.main
       .col-xs-6.col-sm-3.lendy
         h3.i Lendeavor
-        p.i Match Small Businesses With Loans        
-        img.i(src='/images/lendyi1.png', ng-click='lendy=!lendy')
+        p.i Match Small Businesses With Loans
+        a(href='/lendeavor')
+          img.i(src='/images/lendyi1.png')
       .col-xs-6.col-sm-3.rand
         h3.i Rand McNally
         p.i A GeoCaching App For Educators And Explorers
-        img.i(src='/images/RMi1.png', ng-click='rand=!rand')
+        a(href='/randmcnally')
+          img.i(src='/images/RMi1.png')
       .col-xs-6.col-sm-3
         h3.i stockickr
         p.i Mobile Stock Trading Patform
-        img.i(src='/images/SKi1.png', ng-click='sk=!sk')
+        a(href='/stockickr')
+          img.i(src='/images/ski1.png')
       .col-xs-6.col-sm-3
         h3.i True Spirit
         p.i Effiecent, Ellegant And Intuitive eCommerce
-        img.i(src='/images/TSi1.png', ng-click='ts=!ts')
-
-    .row.top(ng-show='lendy')
-      .row-fluid.naver
-        .col-xs-4
-        .col-xs-4.center          
-        .col-xs-4.right
-          h4.naver Rand McNally
-          img.naver(src='/images/rightc.png', ng-click='lendy=!lendy; rand=!rand')          
-      .col-xs-12  
-        .col-xs-6.col-sm-3
-          h3.i Lendeavor
-          p.i Match Small Businesses With Loans        
-          img.i(src='/images/lendyi1.png')
+        a(href='/truespirit')
+          img.i(src='/images/TSi1.png')
 
     .row.top(ng-show='rand')
       .row-fluid.naver

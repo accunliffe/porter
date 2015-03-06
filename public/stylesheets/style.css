@@ -4,6 +4,74 @@
   font-family: 'Arca';
   src: url("/fonts/Arca-Heavy.ttf");
 }
+nav {
+  background-color: rgba(215,215,215,0.95) !important;
+}
+@media screen and (min-width: 500px) {
+  nav.navbar {
+    min-height: 50px !important;
+  }
+}
+@media screen and (min-width: 500px) {
+  nav.mobile {
+    display: none;
+  }
+}
+@media screen and (max-width: 500px) {
+  nav.desktop {
+    display: none;
+  }
+}
+nav p.navbar-text.naver {
+  cursor: pointer;
+  margin-right: 10px;
+  margin-left: 10px;
+  letter-spacing: 2px;
+  font-family: 'Raleway';
+  -webkit-font-smoothing: antialiased;
+  color: #737373;
+}
+@media screen and (max-width: 800px) {
+  nav p.navbar-text.naver {
+    text-align: right;
+    display: inline-block;
+    font-size: 10px;
+    width: 20px;
+  }
+}
+nav p.navbar-text.naver:hover {
+  color: #fff !important;
+  text-decoration: underline;
+}
+ul.dropdown-menu {
+  background-color: rgba(215,215,215,0.95);
+  color: #000;
+}
+.dropdown-menu li a {
+  -webkit-font-smoothing: antialiased;
+  color: #737373;
+  font-family: 'Raleway';
+  text-align: center;
+}
+.dropdown-menu li a:hover {
+  color: #000 !important;
+}
+.dropdown-menu p.naver {
+  cursor: pointer;
+  margin-right: 10px;
+  margin-left: 10px;
+  letter-spacing: 2px;
+  font-family: 'Raleway';
+  color: #fff !important;
+}
+@media screen and (max-width: 800px) {
+  .dropdown-menu p.naver {
+    text-align: right;
+    display: inline-block;
+    font-size: 10px;
+    width: 20px;
+  }
+}
 .row.top {
   margin-top: 30px;
 }
@@ -75,6 +143,20 @@ img.naver {
   height: 30px;
   cursor: pointer;
 }
+img.icon {
+  height: 50px !important;
+  padding: 5px;
+}
+img.iconM {
+  padding: 2.5px;
+  height: 50px;
+}
+img.menu {
+  height: 45px;
+  float: right;
+  padding: 5px 0 0 0;
+  cursor: pointer;
+}
 h3.i {
   text-align: center;
   font-family: 'Raleway';
@@ -116,20 +198,6 @@ h4.naver {
     font-size: 12px;
     height: 20px;
     margin-top: 5px;
-  }
-}
-p.naver {
-  cursor: pointer;
-  margin-right: 20px;
-  margin-left: 20px;
-  font-family: 'Raleway';
-}
-@media screen and (max-width: 800px) {
-  p.naver {
-    text-align: right;
-    display: inline-block;
-    font-size: 10px;
-    width: 20px;
   }
 }
 p.i {

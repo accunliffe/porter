@@ -20,5 +20,37 @@ html(ng-app="port")
     script(src='javascripts/controllers.js')
     script(src='javascripts/app.js')
 
-  body(ng-cloak='', ng-view='')    
+  body(ng-cloak='')    
     block content
+    nav.navbar.navbar-default.navbar-fixed-top.desktop
+      .container-fluid
+        a(href='/home')
+          img.icon(src='/images/ALogo4.png')
+        a(href='https://www.dropbox.com/s/k5tdmgqqm4mbeyt/ACResumeUX4.pdf?dl=0', target='_blank')
+          p.navbar-text.navbar-right.naver Resume
+        a(href='mailto:cunliffeandrewc@gmail.com?Subject=Hello%20There', target='_blank')    
+          p.navbar-text.navbar-right.naver Email
+        a(href='/about',)
+          p.navbar-text.navbar-right.naver About
+
+    nav.navbar.navbar-default.navbar-fixed-top.mobile
+      .container-fluid
+        a.navbar-left(href='/home')
+          img.iconM(src='/images/ALogo4.png')
+        a.navbar-right(type='button', data-toggle='dropdown')
+          img.menu(src='/images/menu.png')
+        ul.dropdown-menu.dropdown-menu-right.navbar-right(role='menu')
+          li(role='presentation')
+            a(href='/home') Home
+          li.divider(role='presentation')
+          li(role='presentation')
+            a(href='/about') About
+          li.divider(role='presentation')
+          li(role='presentation')
+            a(href='mailto:cunliffeandrewc@gmail.com?Subject=Hello%20There', target='_blank') Email
+          li.divider(role='presentation')
+          li(role='presentation')
+            a(href='https://www.dropbox.com/s/k5tdmgqqm4mbeyt/ACResumeUX4.pdf?dl=0', target='_blank') Resume
+    div(ng-view='')
+
+    

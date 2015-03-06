@@ -4,6 +4,65 @@
   font-family:'Arca'
   src url('/fonts/Arca-Heavy.ttf')
 
+nav
+  background-color rgba(215,215,215,0.95) !important
+  &.navbar
+    @media screen and (min-width: 500px)
+      min-height 50px !important
+  &.mobile
+    @media screen and (min-width: 500px)
+      display none    
+  &.desktop
+    @media screen and (max-width: 500px)
+      display none
+  p.navbar-text    
+    &.naver
+      cursor pointer
+      @media screen and (max-width: 800px)
+        text-align right
+        display inline-block
+        font-size 10px
+        width 20px
+      margin-right 10px 
+      margin-left 10px
+      letter-spacing 2px
+      font-family:'Raleway'
+      -webkit-font-smoothing antialiased
+      color rgba(115, 115, 115, 1)
+    &.naver:hover
+      color white !important
+      text-decoration underline
+  
+ul
+  &.dropdown-menu
+    background-color rgba(215,215,215,0.95)
+    color black
+      
+.dropdown-menu
+  & li
+    & a
+      -webkit-font-smoothing antialiased
+      color rgba(115, 115, 115, 1)
+      font-family: 'Raleway'
+      text-align center
+    a:hover
+      color black !important
+
+  p  
+    &.naver
+      cursor pointer
+      @media screen and (max-width: 800px)
+        text-align right
+        display inline-block
+        font-size 10px
+        width 20px
+      margin-right 10px 
+      margin-left 10px
+      letter-spacing 2px
+      font-family:'Raleway'
+      color white !important
+    
+
 .row
   &.top
     margin-top 30px
@@ -50,6 +109,18 @@ img
   &.naver
     height 30px
     cursor pointer
+  &.icon
+    height 50px !important
+    padding 5px
+  &.iconM
+    padding 2.5px
+    height 50px
+  &.menu
+    height 45px
+    float right
+    padding 5px 0 0 0
+    cursor pointer
+    
   
 
 
@@ -85,16 +156,6 @@ h4
       margin-top 5px
     
 p  
-  &.naver
-    cursor pointer
-    @media screen and (max-width: 800px)
-      text-align right
-      display inline-block
-      font-size 10px
-      width 20px
-    margin-right 20px
-    margin-left 20px
-    font-family:'Raleway'
   &.i
     text-align center
     height 30px
