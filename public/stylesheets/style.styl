@@ -16,10 +16,14 @@ nav
     @media screen and (min-width: 500px)
       min-height 50px !important
   &.mobile
-    @media screen and (min-width: 500px)
-      display none    
+    @media screen and (min-width: 480px)
+      display none
+    @media screen and (max-height 480px) and (orientation: landscape)
+      display block    
   &.desktop
-    @media screen and (max-width: 500px)
+    @media screen and (max-width: 480px)
+      display none
+    @media screen and (max-height 480px) and (orientation: landscape)
       display none
   p.navbar-text    
     &.naver
@@ -177,6 +181,9 @@ img
     @media screen and (max-width: 480px)
       padding 1px
       width 98%
+    @media screen and (max-height 480px) and (orientation: landscape)
+      max-width 60%
+      margin 30px
     
   
 
@@ -203,7 +210,7 @@ h3
     @media screen and (max-height 480px) and (orientation: landscape)
       max-width 100%
       margin 10px auto 5px auto
-      font-size 8px
+      font-size 14px
     @media screen and (max-width: 480px)
       font-size 14px
       margin 20px auto 5px auto
@@ -241,3 +248,5 @@ p
       font-size 12px
       margin-bottom 10px
       height auto
+    @media screen and (max-height 480px) and (orientation: landscape)
+      height 50px

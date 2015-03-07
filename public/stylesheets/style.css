@@ -16,12 +16,22 @@ nav {
     min-height: 50px !important;
   }
 }
-@media screen and (min-width: 500px) {
+@media screen and (min-width: 480px) {
   nav.mobile {
     display: none;
   }
 }
-@media screen and (max-width: 500px) {
+@media screen and (max-height: 480px) and (orientation: landscape) {
+  nav.mobile {
+    display: block;
+  }
+}
+@media screen and (max-width: 480px) {
+  nav.desktop {
+    display: none;
+  }
+}
+@media screen and (max-height: 480px) and (orientation: landscape) {
   nav.desktop {
     display: none;
   }
@@ -231,6 +241,12 @@ img.content {
     width: 98%;
   }
 }
+@media screen and (max-height: 480px) and (orientation: landscape) {
+  img.content {
+    max-width: 60%;
+    margin: 30px;
+  }
+}
 h3.i {
   text-align: center;
   font-family: 'Raleway';
@@ -260,7 +276,7 @@ h3.content {
   h3.content {
     max-width: 100%;
     margin: 10px auto 5px auto;
-    font-size: 8px;
+    font-size: 14px;
   }
 }
 @media screen and (max-width: 480px) {
@@ -320,5 +336,10 @@ p.content {
     font-size: 12px;
     margin-bottom: 10px;
     height: auto;
+  }
+}
+@media screen and (max-height: 480px) and (orientation: landscape) {
+  p.content {
+    height: 50px;
   }
 }
