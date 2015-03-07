@@ -3,6 +3,12 @@
 @font-face 
   font-family:'Arca'
   src url('/fonts/Arca-Heavy.ttf')
+  
+
+.container-fluid
+  &.content
+    height auto
+    padding  !important
 
 nav
   background-color rgba(215,215,215,0.95) !important
@@ -87,6 +93,45 @@ ul
   &.center
     text-align center
     
+.col-xs-12.col-sm-4
+  &.imagewrapper
+    @media screen and (min-width: 1920px)
+      height 650px
+    @media screen and (max-width: 480px)
+      height 300px
+      width 100%
+    height 300px
+    text-align center
+    max-width 100%
+    
+.col-xs-12
+  &.imagewrapper
+    @media screen and (min-width: 1920px)
+      height 650px
+    @media screen and (max-width: 480px)
+      height 300px
+      width 100%
+    height 300px
+    text-align center
+    max-width 100%
+    &.video
+      @media screen and (max-width: 480px)
+        display none
+      
+    
+  
+  
+iframe
+  max-width 100%
+  text-align center !important
+  @media screen and (max-width: 480px)
+    height 315px
+  
+
+.col-xs-12
+  &.content
+    padding 0 !important
+    
 img
   max-width 100%
   &.hs
@@ -123,6 +168,12 @@ img
     float right
     padding 5px 0 0 0
     cursor pointer
+  &.content
+    margin-bottom 20px
+    padding 20px
+    @media screen and (max-width: 480px)
+      padding 1px
+      width 98%
     
   
 
@@ -185,4 +236,5 @@ p
     height 150px    
     @media screen and (max-width: 480px)
       font-size 12px
-      margin-bottom 0
+      margin-bottom 10px
+      height auto
