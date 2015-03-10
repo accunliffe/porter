@@ -99,8 +99,18 @@ ul
   &.center
     text-align center
     
-.col-xs-12.col-sm-4
+.col-xs-12.col-md-4
   &.imagewrapper
+    @media screen and (min-width: 1920px)
+      height 650px
+    @media screen and (max-width: 480px)
+      height 200px
+      width 100%
+    height 500px
+    text-align center
+    max-width 100%
+    margin-bottom 20px
+  &.imagewrapperl
     @media screen and (min-width: 1920px)
       height 650px
     @media screen and (max-width: 480px)
@@ -167,7 +177,7 @@ img
     padding 5px 0 0 0
     cursor pointer
   &.content
-    margin-bottom 20px
+    margin-bottom 30px
     padding 10px
     max-height 100%
     @media screen and (min-width: 1920px)
@@ -242,5 +252,6 @@ p
       font-size 12px
       margin-bottom 10px
       height auto
+      min-height 50px
     @media screen and (max-height 480px) and (orientation: landscape)
       height 50px
