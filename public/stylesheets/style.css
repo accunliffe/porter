@@ -261,6 +261,12 @@ img.content {
     margin: 30px;
   }
 }
+img.about {
+  margin-top: 100px;
+}
+h2.about {
+  margin-top: 100px;
+}
 h3.i {
   text-align: center;
   font-family: 'Raleway';
