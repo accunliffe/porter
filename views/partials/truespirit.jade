@@ -1,5 +1,5 @@
 block content
-  .container-fluid(ng-cloak='')
+  .container-fluid#ts(ng-cloak='')
     .row.top
       .row-fluid.naver
         .col-xs-4
@@ -33,7 +33,7 @@ block content
       .col-xs-12.col-md-4.imagewrapper
         img.content(src='/images/1trueSpirit0.png')
       .col-xs-12.col-md-4.imagewrapper
-        img.content(src='/images/tsCheckout.png')
+        img.content(src='/images/tsCheckout.jpg')
       .col-xs-12.col-md-4.imagewrapper
         img.content(src='/images/tsminiCart1.jpg')      
 
@@ -41,8 +41,8 @@ block content
       .row-fluid.naver
         .col-xs-4
           h4.naver stockickr
-          a(href='/stockickr')
-            img.naver(src='/images/leftc.png', ng-click='sk=!sk; ts=!ts')
+          a(href='/stockickr/#sk')
+            img.naver(src='/images/leftc.png')
 
           
 
