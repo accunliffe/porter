@@ -54,7 +54,7 @@ nav p.navbar-text.naver {
   }
 }
 nav p.navbar-text.naver:hover {
-  color: #fff !important;
+  color: #000 !important;
   text-decoration: underline;
 }
 ul.dropdown-menu {
@@ -224,6 +224,9 @@ img.naver {
   height: 30px;
   cursor: pointer;
 }
+img.naver:hover {
+  background-color: rgba(215,215,215,0.95) !important;
+}
 img.icon {
   height: 50px !important;
   padding: 5px;
@@ -380,8 +383,8 @@ p.content {
 }
 .view-animate.ng-enter {
   height: 100%;
-  -webkit-transition: all cubic-bezier(0.25, 0.46, 0.45, 0.94) 1.5s;
-  transition: all cubic-bezier(0.25, 0.46, 0.45, 0.94) 1.5s;
+  -webkit-transition: all cubic-bezier(0.25, 0.46, 0.45, 0.94) 2.5s;
+  transition: all cubic-bezier(0.25, 0.46, 0.45, 0.94) 2.5s;
 }
 .view-animate.ng-enter.ng-enter-active {
   opacity: 1;

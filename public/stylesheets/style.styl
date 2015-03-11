@@ -46,7 +46,7 @@ nav
       -webkit-font-smoothing antialiased
       color rgba(115, 115, 115, 1)
     &.naver:hover
-      color white !important
+      color black !important
       text-decoration underline
   
 ul
@@ -179,6 +179,8 @@ img
   &.naver
     height 30px
     cursor pointer
+  &.naver:hover
+    background-color rgba(215,215,215,0.95) !important
   &.icon
     height 50px !important
     padding 5px
@@ -295,8 +297,8 @@ p
 .view-animate
   &.ng-enter
     height 100%
-    -webkit-transition all cubic-bezier(0.250, 0.460, 0.450, 0.940) 1.5s
-    transition all cubic-bezier(0.250, 0.460, 0.450, 0.940) 1.5s
+    -webkit-transition all cubic-bezier(0.250, 0.460, 0.450, 0.940) 2.5s
+    transition all cubic-bezier(0.250, 0.460, 0.450, 0.940) 2.5s
     &.ng-enter-active
       opacity 1
   &.ng-leave
