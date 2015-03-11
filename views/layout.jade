@@ -1,5 +1,5 @@
 doctype html
-html(ng-app="port")
+html(ng-app="port", ng-cloak='')
   head
     title AndrewCunliffe
     meta(charset='utf8')
@@ -20,7 +20,7 @@ html(ng-app="port")
     script(src='javascripts/controllers.js')
     script(src='javascripts/app.js')
 
-  body(ng-cloak='')    
+  body   
     block content
     nav.navbar.navbar-default.navbar-fixed-top.desktop
       .container-fluid
