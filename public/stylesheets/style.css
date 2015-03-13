@@ -124,35 +124,35 @@ ul.dropdown-menu {
 .col-xs-4.center {
   text-align: center;
 }
-.col-xs-12.col-md-4.imagewrapper {
+.col-xs-12.col-md-6.imagewrapper {
   height: 500px;
   text-align: center;
   max-width: 100%;
   margin-bottom: 20px;
 }
 @media screen and (min-width: 1920px) {
-  .col-xs-12.col-md-4.imagewrapper {
-    height: 650px;
+  .col-xs-12.col-md-6.imagewrapper {
+    height: 900px;
   }
 }
 @media screen and (max-width: 480px) {
-  .col-xs-12.col-md-4.imagewrapper {
+  .col-xs-12.col-md-6.imagewrapper {
     height: auto;
     width: 100%;
   }
 }
-.col-xs-12.col-md-4.imagewrapperl {
-  height: 300px;
+.col-xs-12.col-md-6.imagewrapperl {
+  height: 500px;
   text-align: center;
   max-width: 100%;
 }
 @media screen and (min-width: 1920px) {
-  .col-xs-12.col-md-4.imagewrapperl {
-    height: 650px;
+  .col-xs-12.col-md-6.imagewrapperl {
+    height: 900px;
   }
 }
 @media screen and (max-width: 480px) {
-  .col-xs-12.col-md-4.imagewrapperl {
+  .col-xs-12.col-md-6.imagewrapperl {
     height: auto;
     width: 100%;
   }
@@ -250,12 +250,12 @@ img.content {
 }
 @media screen and (min-width: 1920px) {
   img.content {
-    max-height: 600px;
+    height: 750px;
   }
 }
 @media screen and (max-width: 480px) {
   img.content {
-    width: 98%;
+    width: auto;
     height: auto;
   }
 }
@@ -273,9 +273,17 @@ img.about {
     float: right;
   }
 }
+h2 {
+  -webkit-font-smoothing: antialiased;
+}
 h2.about {
   margin-top: 100px;
   font-family: 'Raleway';
+}
+h2.titles {
+  text-align: center;
+  font-family: 'Raleway';
+  margin-bottom: 50px;
 }
 h3.i {
   text-align: center;
