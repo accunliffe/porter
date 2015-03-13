@@ -75,102 +75,7 @@ function ModalCtrl($scope, $modal, $log) {
     });
   };
 };
-function ModalCtrl2($scope, $modal, $log) {
 
-  $scope.items = ['item1', 'item2', 'item3'];
-
-  $scope.open = function (size) {
-
-    var modalInstance = $modal.open({
-      templateUrl: 'partials/stockickr-modal',
-      controller: ModalInstanceCtrl,
-      size: size,
-      resolve: {
-        items: function () {
-          return $scope.items;
-        }
-      }
-    });
-
-    modalInstance.result.then(function (selectedItem) {
-      $scope.selected = selectedItem;
-    }, function () {
-      $log.info('Modal dismissed at: ' + new Date());
-    });
-  };
-};
-function ModalCtrl3($scope, $modal, $log) {
-
-  $scope.items = ['item1', 'item2', 'item3'];
-
-  $scope.open = function (size) {
-
-    var modalInstance = $modal.open({
-      templateUrl: 'partials/port-modal',
-      controller: ModalInstanceCtrl,
-      size: size,
-      resolve: {
-        items: function () {
-          return $scope.items;
-        }
-      }
-    });
-
-    modalInstance.result.then(function (selectedItem) {
-      $scope.selected = selectedItem;
-    }, function () {
-      $log.info('Modal dismissed at: ' + new Date());
-    });
-  };
-};
-function ModalCtrl4($scope, $modal, $log) {
-
-  $scope.items = ['item1', 'item2', 'item3'];
-
-  $scope.open = function (size) {
-
-    var modalInstance = $modal.open({
-      templateUrl: 'partials/TS-modal',
-      controller: ModalInstanceCtrl,
-      size: size,
-      resolve: {
-        items: function () {
-          return $scope.items;
-        }
-      }
-    });
-
-    modalInstance.result.then(function (selectedItem) {
-      $scope.selected = selectedItem;
-    }, function () {
-      $log.info('Modal dismissed at: ' + new Date());
-    });
-  };
-};
-function ModalCtrl5($scope, $modal, $log) {
-
-  $scope.items = ['item1', 'item2', 'item3'];
-
-  $scope.open = function (size) {
-
-    var modalInstance = $modal.open({
-      templateUrl: 'partials/RM-modal',
-      controller: ModalInstanceCtrl,
-      size: size,
-      resolve: {
-        items: function () {
-          return $scope.items;
-        }
-      }
-    });
-
-    modalInstance.result.then(function (selectedItem) {
-      $scope.selected = selectedItem;
-    }, function () {
-      $log.info('Modal dismissed at: ' + new Date());
-    });
-  };
-};
 // Please note that $modalInstance represents a modal window (instance) dependency.
 // It is not the same as the $modal service used above.
 
@@ -193,3 +98,4 @@ var BtnCtrl = function ($scope) {
     right: false
   };
 };
+

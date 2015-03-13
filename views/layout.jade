@@ -18,11 +18,14 @@ html(ng-app="port", ng-cloak='')
     script(src='bower_components/jquery/dist/jquery.js')
     script(src='bower_components/bootstrap/dist/js/bootstrap.js')
     script(src='bower_components/angular-bootstrap/ui-bootstrap.min.js')
+    script(src='bower_components/angular-touch/angular-touch.js')
+    script(src='bower_components/angular-loading-bar/build/loading-bar.js')
     script(src='bower_components/angular-route/angular-route.js')
+    script(src='bower_components/angular-bootstrap-lightbox/dist/angular-bootstrap-lightbox.js')
     script(src='javascripts/controllers.js')
     script(src='javascripts/app.js')
 
-  body   
+  body(ng-cloak)   
     block content
     nav.navbar.navbar-default.navbar-fixed-top.desktop
       .container-fluid
