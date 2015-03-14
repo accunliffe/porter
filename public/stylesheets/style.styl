@@ -3,7 +3,9 @@
 @font-face 
   font-family:'Arca'
   src url('/fonts/Arca-Heavy.ttf')
-  
+
+[ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak
+  display none !important  
 
 //main containers
 
@@ -241,7 +243,6 @@ h3
   &.content
     text-align left
     font-family:'Raleway'
-    font-weight bold
     margin 20px auto 5px auto    
     @media screen and (max-height 480px) and (orientation: landscape)
       max-width 100%
@@ -307,14 +308,14 @@ p
 .view-animate
   &.ng-enter
     height 100%
-    -webkit-transition all cubic-bezier(0.250, 0.460, 0.450, 0.940) 1.5s
-    transition all cubic-bezier(0.250, 0.460, 0.450, 0.940) 1.5s
+    -webkit-transition all linear 1s
+    transition all linear 1s
     opacity 0
     &.ng-enter-active
       opacity 1
   &.ng-leave
-    -webkit-transition all cubic-bezier(0.250, 0.460, 0.450, 0.940) 1.5s
-    transition all cubic-bezier(0.250, 0.460, 0.450, 0.940) 1.5s
+    -webkit-transition all linear 1s
+    transition all linear 1s
     &.ng-leave-active
       opacity 0
 
