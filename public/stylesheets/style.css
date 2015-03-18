@@ -126,6 +126,19 @@ ul.dropdown-menu {
     margin: 30px auto 0 auto;
   }
 }
+.row-fluid.naverl {
+  margin-top: 40px;
+}
+@media screen and (min-width: 1920px) {
+  .row-fluid.naverl {
+    margin: 0 auto 0 auto;
+  }
+}
+@media screen and (max-width: 480px) {
+  .row-fluid.naverl {
+    margin: 180px auto 0 auto;
+  }
+}
 .col-xs-4.right {
   text-align: right;
 }
