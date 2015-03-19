@@ -1,15 +1,19 @@
 doctype html
-html(ng-app="port", ng-cloak='')
+html(prefix='og: http://ogp.me/ns#', ng-app='port', ng-cloak='')
   head
     title AndrewCunliffe
     meta(charset='utf8')
     meta(name='viewport',content='initial-scale=1,width=device-width')
     meta(http-equiv='X-UA-Compatible',content='IE=edge,chrome=1')
     meta(name='google',content='notranslate')
+    meta(property='og:title', content='AndrewCunliffe')
+    meta(property='og:type', content='website')
+    meta(property='og:description', content='This is my online portfolio')
+    meta(property='og:image', content='http://andrewcunliffe.jit.su/images/homescreen.png')
+    meta(property='og:url', content='http://andrewcunliffe.jit.su/home')
     base(href='/')
     link(rel='stylesheet', href='/stylesheets/style.css')
-    link(rel='stylesheet', href='bower_components/bootstrap/dist/css/bootstrap.css')   
-    link(rel='shortcut icon', href='/images/favicon.ico', type='image/x-icon')
+    link(rel='stylesheet', href='bower_components/bootstrap/dist/css/bootstrap.css')    
     link(rel='icon', href='/images/favicon.ico', type='image/x-icon')
     script(src='bower_components/angular/angular.js')
     script(src='bower_components/angular-animate/angular-animate.js')
