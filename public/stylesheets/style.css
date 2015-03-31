@@ -246,8 +246,7 @@ img.topper {
 }
 @media screen and (min-width: 1920px) {
   img.topper {
-    margin-top: -5%;
-    margin-bottom: 10%;
+    margin-top: -9%;
   }
 }
 img.hs {
@@ -335,6 +334,32 @@ img.about {
     float: right;
   }
 }
+h1 {
+  -webkit-font-smoothing: antialiased;
+}
+h1.content {
+  text-align: center;
+  font-family: 'Raleway';
+  margin: 0 auto 5px auto;
+}
+@media screen and (max-height: 480px) and (orientation: landscape) {
+  h1.content {
+    max-width: 100%;
+    margin: 10px auto 5px auto;
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 480px) {
+  h1.content {
+    font-size: 14px;
+    margin: 20px auto 5px auto;
+  }
+}
+@media screen and (min-width: 1920px) {
+  h1.content {
+    margin-top: 0;
+  }
+}
 h2 {
   -webkit-font-smoothing: antialiased;
 }
@@ -386,7 +411,7 @@ h3.content {
 }
 @media screen and (min-width: 1920px) {
   h3.content {
-    margin-top: 2.5%;
+    margin-top: 1%;
   }
 }
 h4 {
