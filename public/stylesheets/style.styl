@@ -7,13 +7,16 @@
 [ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak
   display none !important  
 
+body
+  padding 0 0 0 0 !important
+
 //main containers
 
 
 .container-fluid
   &.content
     height auto
-    padding  !important
+    padding 0 0 0 0 !important
 
 
 //navigation
@@ -85,7 +88,9 @@ ul
 
 .row
   &.top
+    padding 0 0 0 0 !important
     margin-top 30px
+    width 100%
     @media screen and (min-width: 1920px)
       margin 55px auto 0 auto
     @media screen and (max-width: 480px)
@@ -139,6 +144,8 @@ ul
     max-width 100%
     
 .col-xs-12
+  text-align center
+  padding 0 0 0 0 !important
   &.imagewrapper
     @media screen and (min-width: 1920px)
       height 650px
@@ -149,7 +156,21 @@ ul
     text-align center
     max-width 100%
   &.content
-    padding 0 !important    
+    padding 0 0 0 0 !important
+  &.fuller
+    background-position 50% 50%
+    background-repeat no-repeat
+    background-attachment fixed
+    background-size cover
+    height 400px
+    @media screen and (max-width: 480px)
+      height 150px
+    @media screen and (min-width: 1920px)
+      height 650px
+    padding 0 0 0 0 !important
+    &.l    
+      background-image url('/images/lmm5.jpg')
+       
   
   
 //video
@@ -165,6 +186,13 @@ iframe
 
 img
   max-width 100%
+  text-align center 
+  &.topper
+    text-align center
+    margin-top -10%
+    @media screen and (min-width: 1920px)
+      margin-top -5%
+      margin-bottom 10%
   &.hs
     max-width 80%
     margin 10% 2.5% 5% 2%
@@ -246,7 +274,7 @@ h3
       font-size 14px
       margin 50px auto 5px auto
   &.content
-    text-align left
+    text-align center
     font-family:'Raleway'
     margin 20px auto 5px auto    
     @media screen and (max-height 480px) and (orientation: landscape)
@@ -256,6 +284,8 @@ h3
     @media screen and (max-width: 480px)
       font-size 14px
       margin 20px auto 5px auto
+    @media screen and (min-width: 1920px)
+      margin-top 2.5%
     
 h4
   -webkit-font-smoothing antialiased

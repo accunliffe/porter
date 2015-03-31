@@ -12,9 +12,12 @@
 .x-ng-cloak {
   display: none !important;
 }
+body {
+  padding: 0 0 0 0 !important;
+}
 .container-fluid.content {
   height: auto;
-  padding: !important;
+  padding: 0 0 0 0 !important;
 }
 nav {
   background-color: rgba(215,215,215,0.95) !important;
@@ -95,7 +98,9 @@ ul.dropdown-menu {
   }
 }
 .row.top {
+  padding: 0 0 0 0 !important;
   margin-top: 30px;
+  width: 100%;
 }
 @media screen and (min-width: 1920px) {
   .row.top {
@@ -178,6 +183,10 @@ ul.dropdown-menu {
     width: 100%;
   }
 }
+.col-xs-12 {
+  text-align: center;
+  padding: 0 0 0 0 !important;
+}
 .col-xs-12.imagewrapper {
   height: auto;
   text-align: center;
@@ -195,7 +204,28 @@ ul.dropdown-menu {
   }
 }
 .col-xs-12.content {
-  padding: 0 !important;
+  padding: 0 0 0 0 !important;
+}
+.col-xs-12.fuller {
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  height: 400px;
+  padding: 0 0 0 0 !important;
+}
+@media screen and (max-width: 480px) {
+  .col-xs-12.fuller {
+    height: 150px;
+  }
+}
+@media screen and (min-width: 1920px) {
+  .col-xs-12.fuller {
+    height: 650px;
+  }
+}
+.col-xs-12.fuller.l {
+  background-image: url("/images/lmm5.jpg");
 }
 iframe {
   max-width: 100%;
@@ -208,6 +238,17 @@ iframe {
 }
 img {
   max-width: 100%;
+  text-align: center;
+}
+img.topper {
+  text-align: center;
+  margin-top: -10%;
+}
+@media screen and (min-width: 1920px) {
+  img.topper {
+    margin-top: -5%;
+    margin-bottom: 10%;
+  }
 }
 img.hs {
   max-width: 80%;
@@ -326,7 +367,7 @@ h3.i {
   }
 }
 h3.content {
-  text-align: left;
+  text-align: center;
   font-family: 'Raleway';
   margin: 20px auto 5px auto;
 }
@@ -341,6 +382,11 @@ h3.content {
   h3.content {
     font-size: 14px;
     margin: 20px auto 5px auto;
+  }
+}
+@media screen and (min-width: 1920px) {
+  h3.content {
+    margin-top: 2.5%;
   }
 }
 h4 {
