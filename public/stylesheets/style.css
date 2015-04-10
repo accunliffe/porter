@@ -215,7 +215,7 @@ ul.dropdown-menu {
 }
 @media screen and (max-width: 480px) {
   .col-xs-12.fuller {
-    height: 150px;
+    height: 300px;
   }
 }
 @media screen and (min-width: 1920px) {
@@ -229,6 +229,11 @@ ul.dropdown-menu {
 @media screen and (min-width: 1920px) {
   .col-xs-12.fuller.l {
     background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url("/images/lmm5.jpg");
+  }
+}
+@media screen and (max-width: 480px) {
+  .col-xs-12.fuller.l {
+    background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url("/images/lmm5.jpg");
   }
 }
 .col-xs-12.middle {
@@ -305,7 +310,7 @@ img.middle {
 }
 @media screen and (max-width: 480px) {
   img.middle {
-    max-width: 70%;
+    max-width: 98%;
     margin: 12% 0 20% 0;
   }
 }
@@ -431,6 +436,8 @@ h2.breaker {
 @media screen and (max-width: 480px) {
   h2.breaker {
     margin: 20px auto 5px auto;
+    font-size: 25px;
+    width: 80%;
   }
 }
 @media screen and (min-width: 1920px) {
@@ -454,7 +461,8 @@ h2.content {
 }
 @media screen and (max-width: 480px) {
   h2.content {
-    margin: 20px auto 5px auto;
+    margin: 0 auto 5px auto;
+    font-size: 20px;
   }
 }
 @media screen and (min-width: 1920px) {
@@ -549,7 +557,7 @@ h4.content {
   h4.content {
     font-size: 16px;
     margin: 20px auto 0 auto;
-    padding: 0 15px 0 15px;
+    max-width: 95%;
   }
 }
 @media screen and (min-width: 1920px) {
