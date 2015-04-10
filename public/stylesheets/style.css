@@ -1,4 +1,5 @@
 @import url("http://fonts.googleapis.com/css?family=Raleway:400,800,700");
+@import url("http://fonts.googleapis.com/css?family=Lato:400,700,900,400italic,700italic,900italic");
 @font-face {
   font-family: 'Arca';
   src: url("/fonts/Arca-Heavy.ttf");
@@ -127,7 +128,7 @@ ul.dropdown-menu {
 }
 @media screen and (max-width: 480px) {
   .row-fluid.naver {
-    margin: 30px auto 0 auto;
+    margin: 60px auto 0 auto;
   }
 }
 .row-fluid.naverl {
@@ -170,6 +171,7 @@ ul.dropdown-menu {
   height: 500px;
   text-align: center;
   max-width: 100%;
+  margin-top: 20px;
 }
 @media screen and (min-width: 1920px) {
   .col-xs-12.col-md-6.imagewrapperl {
@@ -241,7 +243,41 @@ ul.dropdown-menu {
   background-color: #edeadd;
 }
 .col-xs-12.bottom {
-  background-color: #c7c5ba;
+  background-color: #edeadd;
+}
+.col-xs-6.foot {
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 400px;
+  padding: 0 0 0 0 !important;
+}
+@media screen and (max-width: 480px) {
+  .col-xs-6.foot {
+    height: 200px;
+    background-attachment: scroll;
+  }
+}
+@media screen and (min-width: 1920px) {
+  .col-xs-6.foot {
+    height: 800px;
+  }
+}
+.col-xs-6.foot.footTrue {
+  background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url("/images/lendyiPhone.jpg");
+}
+@media screen and (min-width: 1920px) {
+  .col-xs-6.foot.footTrue {
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("/images/lendyiPhone.jpg");
+  }
+}
+.col-xs-6.foot.footRand {
+  background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url("/images/lendyiMac.jpg");
+}
+@media screen and (min-width: 1920px) {
+  .col-xs-6.foot.footRand {
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("/images/lendyiMac.jpg");
+  }
 }
 iframe {
   max-width: 100%;
@@ -312,7 +348,7 @@ img.middle {
 @media screen and (max-width: 480px) {
   img.middle {
     max-width: 98%;
-    margin: 12% 0 20% 0;
+    margin: 12% 0 8% 0;
   }
 }
 img.i {
@@ -328,6 +364,11 @@ img.i {
 img.naver {
   height: 30px;
   cursor: pointer;
+}
+@media screen and (max-width: 480px) {
+  img.naver {
+    margin-right: 6px;
+  }
 }
 img.naver:hover {
   background-color: rgba(215,215,215,0.95) !important;
@@ -424,8 +465,13 @@ h2.breaker {
   color: #fff;
   width: 50%;
   float: left;
-  padding: 1% 0 0 10px;
+  padding: 30% 0 0 10px;
   text-shadow: 0.75px 0.75px #636363;
+}
+h2.breaker.r {
+  float: right;
+  text-align: right;
+  margin-right: 10px;
 }
 @media screen and (max-height: 480px) and (orientation: landscape) {
   h2.breaker {
@@ -437,14 +483,13 @@ h2.breaker {
 @media screen and (max-width: 480px) {
   h2.breaker {
     margin: 20px auto 5px auto;
-    font-size: 25px;
+    font-size: 20px;
     width: 80%;
   }
 }
 @media screen and (min-width: 1920px) {
   h2.breaker {
-    margin-top: 0;
-    width: 35%;
+    width: 25%;
   }
 }
 h2.content {
@@ -543,9 +588,10 @@ h4.naver {
 }
 h4.content {
   text-align: left;
-  font-family: 'Raleway';
+  font-family: 'Lato';
   margin: 20px auto 5px auto;
   max-width: 70%;
+  line-height: 25px;
 }
 @media screen and (max-height: 480px) and (orientation: landscape) {
   h4.content {
