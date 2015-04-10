@@ -55,6 +55,10 @@ nav p.navbar-text.naver {
   font-family: 'Raleway';
   -webkit-font-smoothing: antialiased;
   color: #737373;
+  -webkit-transition: all linear 0.5s;
+  -moz-transition: all linear 0.5s;
+  -o-transition: all linear 0.5s;
+  transition: all linear 0.5s;
 }
 @media screen and (max-width: 800px) {
   nav p.navbar-text.naver {
@@ -264,20 +268,36 @@ ul.dropdown-menu {
   }
 }
 .col-xs-6.foot.footTrue {
-  background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url("/images/lendyiPhone.jpg");
+  -webkit-transition: all linear 1s;
+  -moz-transition: all linear 1s;
+  -o-transition: all linear 1s;
+  transition: all linear 1s;
+  background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url("/images/TSiPhone.jpg");
 }
 @media screen and (min-width: 1920px) {
   .col-xs-6.foot.footTrue {
-    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("/images/lendyiPhone.jpg");
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("/images/TSiPhone.jpg");
   }
 }
 .col-xs-6.foot.footRand {
-  background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url("/images/lendyiMac.jpg");
+  -webkit-transition: all linear 0.5s;
+  -moz-transition: all linear 0.5s;
+  -o-transition: all linear 0.5s;
+  transition: all linear 0.5s;
+  background-image: url("/images/RMipad.jpg");
 }
 @media screen and (min-width: 1920px) {
   .col-xs-6.foot.footRand {
-    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("/images/lendyiMac.jpg");
+    background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url("/images/RMipad.jpg");
   }
+}
+.col-xs-6.foot.footRand:hover {
+  opacity: 0.8;
+  color: #000;
+}
+.col-xs-6.foot.footTrue:hover {
+  opacity: 0.8;
+  color: #000;
 }
 iframe {
   max-width: 100%;
@@ -364,6 +384,10 @@ img.i {
 img.naver {
   height: 30px;
   cursor: pointer;
+  -webkit-transition: all linear 0.5s;
+  -moz-transition: all linear 0.5s;
+  -o-transition: all linear 0.5s;
+  transition: all linear 0.5s;
 }
 @media screen and (max-width: 480px) {
   img.naver {
@@ -472,6 +496,7 @@ h2.breaker.r {
   float: right;
   text-align: right;
   margin-right: 10px;
+  z-index: 9999;
 }
 @media screen and (max-height: 480px) and (orientation: landscape) {
   h2.breaker {

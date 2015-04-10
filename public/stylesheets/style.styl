@@ -50,6 +50,10 @@ nav
       font-family:'Raleway'
       -webkit-font-smoothing antialiased
       color rgba(115, 115, 115, 1)
+      -webkit-transition all linear 0.5s
+      -moz-transition all linear 0.5s
+      -o-transition all linear 0.5s
+      transition all linear 0.5s
     &.naver:hover
       color black !important
       text-decoration underline
@@ -187,21 +191,34 @@ ul
     background-repeat no-repeat
     background-size cover
     height 400px
-    padding 0 0 0 0 !important
+    padding 0 0 0 0 !important   
     @media screen and (max-width: 480px)
       height 200px
       background-attachment scroll
     @media screen and (min-width: 1920px)
       height 800px
     &.footTrue
-      background-image linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7) ), url('/images/lendyiPhone.jpg')
+      -webkit-transition all linear 1s
+      -moz-transition all linear 1s
+      -o-transition all linear 1s
+      transition all linear 1s     
+      background-image linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7) ), url('/images/TSiPhone.jpg')
       @media screen and (min-width: 1920px)
-        background-image linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('/images/lendyiPhone.jpg')
+        background-image linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('/images/TSiPhone.jpg')
     &.footRand
-      background-image linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7) ), url('/images/lendyiMac.jpg')
+      -webkit-transition all linear 0.5s
+      -moz-transition all linear 0.5s
+      -o-transition all linear 0.5s
+      transition all linear 0.5s
+      background-image url('/images/RMipad.jpg')
       @media screen and (min-width: 1920px)
-        background-image linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('/images/lendyiMac.jpg')
-      
+        background-image linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ), url('/images/RMipad.jpg')
+    &.footRand:hover
+      opacity 0.8
+      color black
+    &.footTrue:hover      
+      opacity 0.8
+      color black
     
       
        
@@ -262,6 +279,10 @@ img
   &.naver
     height 30px
     cursor pointer
+    -webkit-transition all linear 0.5s
+    -moz-transition all linear 0.5s
+    -o-transition all linear 0.5s
+    transition all linear 0.5s
     @media screen and (max-width: 480px)
       margin-right 6px
   &.naver:hover
@@ -331,6 +352,7 @@ h2
       float right
       text-align right
       margin-right 10px
+      z-index 9999
     text-align left
     font-family:'Raleway'
     margin 0 auto 5px auto
