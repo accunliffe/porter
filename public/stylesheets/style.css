@@ -330,11 +330,11 @@ ul.dropdown-menu {
   -moz-transition: all linear 0.5s;
   -o-transition: all linear 0.5s;
   transition: all linear 0.5s;
-  background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("/images/ipc.jpg");
+  background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url("/images/SKiPhone.jpg");
 }
 @media screen and (min-width: 1920px) {
   .col-xs-6.foot.footStockickr {
-    background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url("/images/ipc.jpg");
+    background-image: url("/images/SKiPhone.jpg");
   }
 }
 .col-xs-6.foot.footStockickr:hover {
@@ -472,6 +472,10 @@ img.topper.r {
   img.topper.r {
     width: 70%;
   }
+}
+img.topper.sk {
+  width: 100%;
+  margin-top: 20px;
 }
 img.hs {
   max-width: 80%;
