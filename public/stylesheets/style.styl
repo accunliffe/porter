@@ -122,6 +122,8 @@ ul
 //column classes
 
 .col-xs-4
+  &.left
+    margin-left 20px  
   &.right
     text-align right    
   &.center
@@ -273,7 +275,7 @@ img
       max-width 70%
       margin 12% 2.5% 20% 15%
   &.middle
-    max-width 90%
+    max-width 95%
     margin 2.5% 0 5% 0
     @media screen and (min-width: 1920px)
       max-width 60%
@@ -299,6 +301,13 @@ img
     transition all linear 0.5s
     @media screen and (max-width: 480px)
       margin-right 6px
+    &.l
+      @media screen and (min-width: 1920px)
+        padding-left 0 !important
+      @media screen and (max-width: 480px)
+        padding-left 10px !important
+      padding-left 25px
+      
   &.naver:hover
     background-color rgba(215,215,215,0.95) !important
   &.icon

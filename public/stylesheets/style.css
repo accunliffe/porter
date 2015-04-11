@@ -151,6 +151,9 @@ ul.dropdown-menu {
     margin: 180px auto 0 auto;
   }
 }
+.col-xs-4.left {
+  margin-left: 20px;
+}
 .col-xs-4.right {
   text-align: right;
 }
@@ -374,7 +377,7 @@ img.hs {
   }
 }
 img.middle {
-  max-width: 90%;
+  max-width: 95%;
   margin: 2.5% 0 5% 0;
 }
 @media screen and (min-width: 1920px) {
@@ -416,6 +419,19 @@ img.naver {
 @media screen and (max-width: 480px) {
   img.naver {
     margin-right: 6px;
+  }
+}
+img.naver.l {
+  padding-left: 25px;
+}
+@media screen and (min-width: 1920px) {
+  img.naver.l {
+    padding-left: 0 !important;
+  }
+}
+@media screen and (max-width: 480px) {
+  img.naver.l {
+    padding-left: 10px !important;
   }
 }
 img.naver:hover {
