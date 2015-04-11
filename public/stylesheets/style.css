@@ -330,16 +330,15 @@ ul.dropdown-menu {
   -moz-transition: all linear 0.5s;
   -o-transition: all linear 0.5s;
   transition: all linear 0.5s;
-  background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("/images/iPhoneClosedMacBook.jpg");
+  background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("/images/ipc.jpg");
 }
 @media screen and (min-width: 1920px) {
   .col-xs-6.foot.footStockickr {
-    background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url("/images/iPhoneClosedMacBook.jpg");
+    background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url("/images/ipc.jpg");
   }
 }
 .col-xs-6.foot.footStockickr:hover {
   opacity: 0.8;
-  color: #000;
 }
 .col-xs-6.foot.footTrue {
   -webkit-transition: all linear 1s;
@@ -356,6 +355,86 @@ ul.dropdown-menu {
 .col-xs-6.foot.footTrue:hover {
   opacity: 0.8;
   color: #000;
+}
+.col-xs-12.col-md-6.foot {
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 400px;
+  padding: 0 0 0 0 !important;
+}
+@media screen and (max-width: 480px) {
+  .col-xs-12.col-md-6.foot {
+    height: 250px;
+    background-attachment: scroll;
+  }
+}
+@media screen and (min-width: 1920px) {
+  .col-xs-12.col-md-6.foot {
+    height: 800px;
+  }
+}
+.col-xs-12.col-md-6.foot.footLendy {
+  -webkit-transition: all linear 0.5s;
+  -moz-transition: all linear 0.5s;
+  -o-transition: all linear 0.5s;
+  transition: all linear 0.5s;
+  background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("/images/lendyiMac.jpg");
+}
+@media screen and (min-width: 1920px) {
+  .col-xs-12.col-md-6.foot.footLendy {
+    background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url("/images/lendyiMac.jpg");
+  }
+}
+.col-xs-12.col-md-6.foot.footLendy:hover {
+  opacity: 0.8;
+  color: #000;
+}
+.col-xs-12.col-md-6.foot.footRand {
+  -webkit-transition: all linear 0.5s;
+  -moz-transition: all linear 0.5s;
+  -o-transition: all linear 0.5s;
+  transition: all linear 0.5s;
+  background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("/images/RMipad.jpg");
+}
+@media screen and (min-width: 1920px) {
+  .col-xs-12.col-md-6.foot.footRand {
+    background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url("/images/RMipad.jpg");
+  }
+}
+.col-xs-12.col-md-6.foot.footRand:hover {
+  opacity: 0.8;
+  color: #000;
+}
+.col-xs-12.col-md-6.foot.footStockickr {
+  -webkit-transition: all linear 0.5s;
+  -moz-transition: all linear 0.5s;
+  -o-transition: all linear 0.5s;
+  transition: all linear 0.5s;
+  background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("/images/ipc.jpg");
+}
+@media screen and (min-width: 1920px) {
+  .col-xs-12.col-md-6.foot.footStockickr {
+    background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url("/images/ipc.jpg");
+  }
+}
+.col-xs-12.col-md-6.foot.footStockickr:hover {
+  opacity: 0.8;
+}
+.col-xs-12.col-md-6.foot.footTrue {
+  -webkit-transition: all linear 1s;
+  -moz-transition: all linear 1s;
+  -o-transition: all linear 1s;
+  transition: all linear 1s;
+  background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("/images/TSiPhone.jpg");
+}
+@media screen and (min-width: 1920px) {
+  .col-xs-12.col-md-6.foot.footTrue {
+    background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url("/images/TSiPhone.jpg");
+  }
+}
+.col-xs-12.col-md-6.foot.footTrue:hover {
+  opacity: 0.8;
 }
 iframe {
   max-width: 100%;
@@ -689,6 +768,19 @@ h4.naver {
     font-size: 12px;
     height: 20px;
     margin-top: 5px;
+  }
+}
+h4.naver.l {
+  padding-left: 15px;
+}
+@media screen and (min-width: 1920px) {
+  h4.naver.l {
+    padding-left: 0px;
+  }
+}
+@media screen and (max-width: 480px) {
+  h4.naver.l {
+    padding-left: 0px;
   }
 }
 h4.content {
