@@ -197,6 +197,8 @@ ul
   &.bottom
     background-color #EDEADD
     
+      
+    
 .col-xs-6
   &.foot
     background-position 50% 50%
@@ -208,18 +210,18 @@ ul
       height 200px
       background-attachment scroll
     @media screen and (min-width: 1920px)
-      height 800px
-    &.footTrue
-      -webkit-transition all linear 1s
-      -moz-transition all linear 1s
-      -o-transition all linear 1s
-      transition all linear 1s     
-      background-image linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('/images/TSiPhone.jpg')
+      height 800px    
+    &.footLendy
+      -webkit-transition all linear 0.5s
+      -moz-transition all linear 0.5s
+      -o-transition all linear 0.5s
+      transition all linear 0.5s
+      background-image linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('/images/lendyiMac.jpg')
       @media screen and (min-width: 1920px)
-        background-image linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4) ), url('/images/TSiPhone.jpg')
-    &.footTrue:hover      
+        background-image linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4) ), url('/images/lendyiMac.jpg')
+    &.footLendy:hover
       opacity 0.8
-      color black
+      color black   
     &.footRand
       -webkit-transition all linear 0.5s
       -moz-transition all linear 0.5s
@@ -231,6 +233,29 @@ ul
     &.footRand:hover
       opacity 0.8
       color black
+    &.footStockickr
+      -webkit-transition all linear 0.5s
+      -moz-transition all linear 0.5s
+      -o-transition all linear 0.5s
+      transition all linear 0.5s
+      background-image linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('/images/RMipad.jpg')
+      @media screen and (min-width: 1920px)
+        background-image linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4) ), url('/images/RMipad.jpg')
+    &.footStockickr:hover
+      opacity 0.8
+      color black
+    &.footTrue
+      -webkit-transition all linear 1s
+      -moz-transition all linear 1s
+      -o-transition all linear 1s
+      transition all linear 1s     
+      background-image linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('/images/TSiPhone.jpg')
+      @media screen and (min-width: 1920px)
+        background-image linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4) ), url('/images/TSiPhone.jpg')
+    &.footTrue:hover      
+      opacity 0.8
+      color black
+    
     
     
       
@@ -262,6 +287,8 @@ img
     &.r
       width 30%
       margin-top 0
+      @media screen and (max-width: 480px)
+        width 70%
   &.hs
     max-width 80%
     margin 10% 2.5% 5% 2%
@@ -275,16 +302,16 @@ img
       max-width 70%
       margin 12% 2.5% 20% 15%
   &.middle
-    max-width 95%
+    max-width 98%
     margin 2.5% 0 5% 0
     @media screen and (min-width: 1920px)
-      max-width 60%
+      max-width 80%
       margin 2.5% 0 5% 0
     @media screen and (max-height 480px) and (orientation: landscape)
       max-width 50%
       margin 5% 0 0 0
-     @media screen and (max-width: 480px)
-      max-width 98%
+    @media screen and (max-width: 480px)
+      max-width 100%
       margin 12% 0 8% 0
   &.i
     max-width 100%
