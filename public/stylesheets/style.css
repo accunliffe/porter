@@ -15,6 +15,9 @@
 body {
   padding: 0 0 0 0 !important;
 }
+.container-fluid {
+  padding: 0 0 0 0 !important;
+}
 .container-fluid.content {
   height: auto;
   padding: 0 0 0 0 !important;
@@ -243,8 +246,25 @@ ul.dropdown-menu {
     background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url("/images/lmm5.jpg");
   }
 }
+.col-xs-12.fuller.r {
+  padding: 0 0 0 0 !important;
+  background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url("/images/rmCacheList.jpg");
+}
+@media screen and (min-width: 1920px) {
+  .col-xs-12.fuller.r {
+    background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url("/images/rmCacheList.jpg");
+  }
+}
+@media screen and (max-width: 480px) {
+  .col-xs-12.fuller.r {
+    background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url("/images/rmCacheList.jpg");
+  }
+}
 .col-xs-12.middle {
   background-color: #edeadd;
+}
+.col-xs-12.middle.r {
+  background-color: #c8c5ba;
 }
 .col-xs-12.bottom {
   background-color: #edeadd;
@@ -272,30 +292,30 @@ ul.dropdown-menu {
   -moz-transition: all linear 1s;
   -o-transition: all linear 1s;
   transition: all linear 1s;
-  background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url("/images/TSiPhone.jpg");
+  background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("/images/TSiPhone.jpg");
 }
 @media screen and (min-width: 1920px) {
   .col-xs-6.foot.footTrue {
-    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("/images/TSiPhone.jpg");
+    background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url("/images/TSiPhone.jpg");
   }
+}
+.col-xs-6.foot.footTrue:hover {
+  opacity: 0.8;
+  color: #000;
 }
 .col-xs-6.foot.footRand {
   -webkit-transition: all linear 0.5s;
   -moz-transition: all linear 0.5s;
   -o-transition: all linear 0.5s;
   transition: all linear 0.5s;
-  background-image: url("/images/RMipad.jpg");
+  background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("/images/RMipad.jpg");
 }
 @media screen and (min-width: 1920px) {
   .col-xs-6.foot.footRand {
-    background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url("/images/RMipad.jpg");
+    background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url("/images/RMipad.jpg");
   }
 }
 .col-xs-6.foot.footRand:hover {
-  opacity: 0.8;
-  color: #000;
-}
-.col-xs-6.foot.footTrue:hover {
   opacity: 0.8;
   color: #000;
 }
@@ -326,6 +346,10 @@ img.topper {
     margin-bottom: 20%;
     margin-top: 1%;
   }
+}
+img.topper.r {
+  width: 30%;
+  margin-top: 0;
 }
 img.hs {
   max-width: 80%;

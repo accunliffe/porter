@@ -14,6 +14,7 @@ body
 
 
 .container-fluid
+  padding 0 0 0 0 !important
   &.content
     height auto
     padding 0 0 0 0 !important
@@ -179,9 +180,18 @@ ul
       @media screen and (min-width: 1920px)
         background-image linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4) ), url('/images/lmm5.jpg')
       @media screen and (max-width: 480px)
-        background-image linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) ), url('/images/lmm5.jpg')      
+        background-image linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) ), url('/images/lmm5.jpg')
+    &.r
+      padding 0 0 0 0 !important   
+      background-image linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7) ), url('/images/rmCacheList.jpg')
+      @media screen and (min-width: 1920px)
+        background-image linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) ), url('/images/rmCacheList.jpg')
+      @media screen and (max-width: 480px)
+        background-image linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7) ), url('/images/rmCacheList.jpg')      
   &.middle
     background-color #EDEADD
+    &.r
+      background-color #c8c5ba
   &.bottom
     background-color #EDEADD
     
@@ -202,23 +212,24 @@ ul
       -moz-transition all linear 1s
       -o-transition all linear 1s
       transition all linear 1s     
-      background-image linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7) ), url('/images/TSiPhone.jpg')
+      background-image linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('/images/TSiPhone.jpg')
       @media screen and (min-width: 1920px)
-        background-image linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('/images/TSiPhone.jpg')
+        background-image linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4) ), url('/images/TSiPhone.jpg')
+    &.footTrue:hover      
+      opacity 0.8
+      color black
     &.footRand
       -webkit-transition all linear 0.5s
       -moz-transition all linear 0.5s
       -o-transition all linear 0.5s
       transition all linear 0.5s
-      background-image url('/images/RMipad.jpg')
+      background-image linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('/images/RMipad.jpg')
       @media screen and (min-width: 1920px)
-        background-image linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ), url('/images/RMipad.jpg')
+        background-image linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4) ), url('/images/RMipad.jpg')
     &.footRand:hover
       opacity 0.8
       color black
-    &.footTrue:hover      
-      opacity 0.8
-      color black
+    
     
       
        
@@ -246,6 +257,9 @@ img
     @media screen and (max-width: 480px)
       margin-bottom 20%
       margin-top 1%
+    &.r
+      width 30%
+      margin-top 0
   &.hs
     max-width 80%
     margin 10% 2.5% 5% 2%
