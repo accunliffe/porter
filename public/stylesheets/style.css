@@ -545,16 +545,16 @@ img.naver {
   }
 }
 img.naver.l {
-  padding-left: 25px;
+  margin-left: 25px;
 }
 @media screen and (min-width: 1920px) {
   img.naver.l {
-    padding-left: 0 !important;
+    margin-left: 0 !important;
   }
 }
 @media screen and (max-width: 480px) {
   img.naver.l {
-    padding-left: 10px !important;
+    margin-left: 10px !important;
   }
 }
 img.naver:hover {
@@ -678,6 +678,8 @@ h2.breaker.r {
 @media screen and (min-width: 1920px) {
   h2.breaker {
     width: 25%;
+    margin: 0 auto 10px auto;
+    padding: 25% 0 0 10px;
   }
 }
 h2.content {
