@@ -265,9 +265,11 @@ ul
     background-size cover
     height 400px
     padding 0 0 0 0 !important   
-    @media screen and (max-width: 480px)
+    @media screen and (max-width: 675px)
       height 250px
       background-attachment scroll
+    @media screen and (min-width: 675px) and (max-width: 1000px)
+      height 600px
     @media screen and (min-width: 1920px)
       height 800px    
     &.footLendy
@@ -364,7 +366,7 @@ img
     max-width 98%
     margin 2.5% 0 5% 0
     @media screen and (min-width: 1920px)
-      max-width 80%
+      max-width 75%
       margin 2.5% 0 5% 0
     @media screen and (max-height 480px) and (orientation: landscape)
       max-width 50%
@@ -400,6 +402,12 @@ img
     height 50px !important
     padding 5px
     -webkit-font-smoothing antialiased
+    -webkit-transition all linear 0.5s
+    -moz-transition all linear 0.5s
+    -o-transition all linear 0.5s
+    transition all linear 0.5s
+  &.icon:hover
+    background-color rgba(215,215,215,0.95) !important
   &.iconM
     padding 2.5px
     height 45px
@@ -480,8 +488,9 @@ h2
       width 80%
     @media screen and (min-width: 1920px)
       width 25%
-      margin 0 auto 10px auto
-      padding 25% 0 0 10px
+    @media screen and (min-width: 1400px) and (max-width 1920px)
+      padding 20% 0 0 10px
+      
   &.content
     text-align center
     font-family:'Raleway'
