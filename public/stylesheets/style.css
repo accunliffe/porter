@@ -30,7 +30,7 @@ nav.navbar {
     min-height: 50px !important;
   }
 }
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 900px) {
   nav.mobile {
     display: none;
   }
@@ -40,7 +40,7 @@ nav.navbar {
     display: block;
   }
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 900px) {
   nav.desktop {
     display: none;
   }
@@ -587,6 +587,11 @@ img.menu {
   float: right;
   padding: 5px 0 0 0;
   cursor: pointer;
+}
+@media screen and (min-width: 480px) and (max-width: 900px) {
+  img.menu {
+    margin: 0 20px 0 0;
+  }
 }
 img.content {
   margin-bottom: 30px;
