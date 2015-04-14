@@ -30,7 +30,7 @@ html(prefix='og: http://ogp.me/ns#', ng-app='port', ng-cloak='')
     nav.navbar.navbar-default.navbar-fixed-top.desktop
       .container-fluid
         a(href='/home')
-          img.icon(src='/images/ALogo4.png')
+          .icon.shift-on-the-icon
         a(href='https://www.dropbox.com/s/tjchqqpe62x6059/AndrewCunliffeResume.pdf?dl=0', target='_blank')
           p.navbar-text.navbar-right.naver Resume
         a(href='mailto:cunliffeandrewc@gmail.com?Subject=Hello%20There', target='_blank')    
@@ -41,7 +41,7 @@ html(prefix='og: http://ogp.me/ns#', ng-app='port', ng-cloak='')
     nav.navbar.navbar-default.navbar-fixed-top.mobile
       .container-fluid
         a.navbar-left(href='/home')
-          img.iconM(src='/images/ALogo4.png')
+          .icon.shift-on-the-icon
         a.navbar-right(type='button', data-toggle='dropdown')
           img.menu(src='/images/menu.png')
         ul.dropdown-menu.dropdown-menu-right.navbar-right(role='menu')
@@ -56,6 +56,6 @@ html(prefix='og: http://ogp.me/ns#', ng-app='port', ng-cloak='')
           li.divider(role='presentation')
           li(role='presentation')
             a(href='https://www.dropbox.com/s/6zp41gednbm1p7m/ACResumeUX5.pdf?dl=0', target='_blank') Resume
-    div.view-animate(ng-view='', ng-cloak='')
+    div.view-animate(ng-view='' ng-cloak='' autoscroll='true')
 
     
