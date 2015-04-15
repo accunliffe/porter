@@ -496,6 +496,12 @@ ul.dropdown-menu {
   padding: 25px 0 0 0 !important;
   height: 150px;
 }
+@media screen and (max-width: 975px) {
+  .col-xs-12.col-md-6.ts {
+    height: auto;
+    margin: 10px auto 10px auto;
+  }
+}
 iframe {
   max-width: 100%;
   text-align: center !important;
@@ -684,6 +690,11 @@ img.about {
 }
 img.TSicons {
   max-width: 30%;
+}
+@media screen and (max-width: 975px) {
+  img.TSicons {
+    max-width: 100%;
+  }
 }
 h1 {
   -webkit-font-smoothing: antialiased;
@@ -905,6 +916,19 @@ h4.TSicons {
   width: 70%;
   vertical-align: center;
   margin: 0 30px 0 0;
+}
+@media screen and (max-width: 975px) {
+  h4.TSicons {
+    margin: 20px auto 0 auto;
+    float: none;
+    width: 95%;
+    text-align: left;
+  }
+}
+@media screen and (max-width: 975px) {
+  h4.TSicons.bottom {
+    margin: 20px auto 60px auto;
+  }
 }
 p {
   -webkit-font-smoothing: antialiased;
