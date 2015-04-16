@@ -688,6 +688,11 @@ img.about {
     float: right;
   }
 }
+@media screen and (max-width: 975px) {
+  img.about {
+    max-width: 85%;
+  }
+}
 img.TSicons {
   max-width: 30%;
 }
@@ -729,6 +734,11 @@ h2 {
 h2.about {
   margin-top: 100px;
   font-family: 'Raleway';
+}
+@media screen and (max-width: 975px) {
+  h2.about {
+    margin-top: 40px;
+  }
 }
 h2.titles {
   text-align: center;
@@ -972,6 +982,12 @@ p.about {
   p.about {
     margin-left: 150px;
     font-size: 20px;
+  }
+}
+@media screen and (max-width: 480px) {
+  p.about {
+    margin-left: 20px;
+    margin-right: 20px;
   }
 }
 .view-animate.ng-enter,
