@@ -25,8 +25,9 @@ body
 nav  
   &.navbar
     display block
-    background-color rgba(215,215,215,0.95)
-    max-height 50px
+    background-color rgba(255,255,255,0.75)
+    min-height 50px
+    border none !important
     @media screen and (min-width: 480px)
       min-height 50px !important
   &.mobile
@@ -47,12 +48,13 @@ nav
         display inline-block
         font-size 10px
         width 20px
+      font-size 20px
       margin-right 10px 
       margin-left 10px
       letter-spacing 2px
       font-family:'Raleway'
       -webkit-font-smoothing antialiased
-      color rgba(115, 115, 115, 1)
+      color rgba(95, 95, 95, 1)
       -webkit-transition color, text-decoration, cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.5s
       -moz-transition color, text-decoration, cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.5s
       -o-transition color, text-decoration, cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.5s
@@ -99,7 +101,8 @@ ul
 
 .icon
   display block
-  margin 2.5px 0 0 5px
+  margin 5px 0 0 20px
+  padding 0 0 20px 0
   width 45px
   height 45px
   max-width 45px
@@ -189,7 +192,7 @@ ul
   text-align center
   padding 0 0 0 0 !important
   &.top
-    margin 50px 0 0 0
+    margin 58px 0 0 0
   &.imagewrapper
     @media screen and (min-width: 1920px)
       height 650px
