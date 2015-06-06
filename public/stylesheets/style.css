@@ -12,11 +12,18 @@
 .x-ng-cloak {
   display: none !important;
 }
+html {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
 body {
   padding: 0 0 0 0 !important;
+  height: 100%;
 }
 .container-fluid {
   padding: 0 0 0 0 !important;
+  height: 100%;
 }
 .container-fluid.content {
   height: auto;
@@ -239,6 +246,7 @@ ul.dropdown-menu {
 }
 .col-xs-12.top {
   margin: 58px 0 0 0;
+  height: 100%;
 }
 .col-xs-12.imagewrapper {
   height: auto;
@@ -427,9 +435,9 @@ ul.dropdown-menu {
     height: 600px;
   }
 }
-@media screen and (min-width: 1920px) {
+@media screen and (min-width: 1000px) {
   .col-xs-12.col-md-6.foot {
-    height: 800px;
+    height: 720px;
   }
 }
 .col-xs-12.col-md-6.foot.footLendy {

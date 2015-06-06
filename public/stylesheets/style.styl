@@ -7,14 +7,21 @@
 [ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak
   display none !important  
 
+html
+  height 100%
+  margin 0
+  padding 0
+
 body
   padding 0 0 0 0 !important
+  height 100%
 
 //main containers
 
 
 .container-fluid
   padding 0 0 0 0 !important
+  height 100%
   &.content
     height auto
     padding 0 0 0 0 !important
@@ -193,6 +200,7 @@ ul
   padding 0 0 0 0 !important
   &.top
     margin 58px 0 0 0
+    height 100%
   &.imagewrapper
     @media screen and (min-width: 1920px)
       height 650px
@@ -315,8 +323,8 @@ ul
       background-attachment scroll
     @media screen and (min-width: 675px) and (max-width: 1000px)
       height 600px
-    @media screen and (min-width: 1920px)
-      height 800px    
+    @media screen and (min-width: 1000px)
+      height 720px
     &.footLendy
       -webkit-transition all cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.5s
       -moz-transition all cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.5s
