@@ -983,10 +983,13 @@ p.content {
 p.about {
   font-family: 'Lato';
   text-align: left;
+  width: 80%;
+  font-size: 16px;
 }
 @media screen and (min-width: 1920px) {
   p.about {
     margin-left: 150px;
+    line-height: 27px;
     font-size: 20px;
   }
 }
